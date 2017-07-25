@@ -1,0 +1,112 @@
+/* header area */
+.top-header{
+  background: @color-white !important;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+
+
+  &.index-page {
+    position: relative;
+    z-index: -100;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+    // img.logo{
+    //   max-height: 80px;
+    //   margin-bottom: 5px;
+    //   margin-top: -15px;
+    //   z-index: -999;
+    // }
+  }
+  .navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    /* the rest of your styling */
+
+    img.logo{
+      z-index: 1000;
+      max-height: 80px;
+      margin-bottom: 8px;
+      margin-top: 8px;
+      margin-left: 20%;
+      transition:all .5s ease 0s;
+      -webkit-transition:all .5s ease 0s;
+      -moz-transition:all .5s ease 0s;
+      -o-transition:all .5s ease 0s;
+      -ms-transition:all .5s ease 0s;
+    }
+  }
+}
+.header-backup{
+  width: 20px;
+  height: 98px;
+  background: transparent;
+  margin:auto;
+}
+
+
+
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  margin-bottom: 0;
+  margin-top: 0;
+  transition:all .5s ease 0s;
+  -webkit-transition:all .5s ease 0s;
+  -moz-transition:all .5s ease 0s;
+  -o-transition:all .5s ease 0s;
+  -ms-transition:all .5s ease 0s;
+
+  .navbar-toggle  {
+    border-color: @color-white;
+    margin-top: 0px;
+    .icon-bar{
+      background-color: @color-gray-darkest;
+    }
+    span{
+      color: @color-gray-darkest;
+    }
+  }
+
+  .nav-bar{
+    margin-top: 27px;
+    ul.nav{
+      margin: 0;
+      padding: 0;
+    }
+    li a.active{
+      color: @color-main-darker !important;
+      #chirurgia-wrap & {
+        color: @color-surgeon-darker !important;
+      }
+      #reumatologia-wrap & {
+        color: @color-reuma-darker !important;
+      }
+    }
+  }
+  .navbar-nav>li>a {
+    font-size: 24px;
+    color: @color-gray-dark;
+    text-transform: uppercase;
+    transition: all .7s ease 0s;
+    -webkit-transition: all .7s ease 0s;
+    -moz-transition: all .7s ease 0s;
+    -o-transition: all .7s ease 0s;
+    -ms-transition: all .7s ease 0s;
+    padding: 14px 15px;
+    font-weight: bold;
+
+    &:hover{
+      color: @color-main-darker;
+      #chirurgia-wrap & {
+        color: @color-surgeon-darker !important;
+      }
+      #reumatologia-wrap & {
+        color: @color-reuma-darker !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+// body#index {
+//   background: rgb(231, 231, 231); /* For browsers that do not support gradients */
+//   background: -webkit-radial-gradient(circle, rgb(231, 231, 231), rgb(181, 181, 181), rgb(145, 145, 145)); /* Safari */
+//   background: -o-radial-gradient(circle, rgb(231, 231, 231), rgb(181, 181, 181), rgb(145, 145, 145)); /* Opera 11.6 to 12.0 */
+//   background: -moz-radial-gradient(circle, rgb(231, 231, 231), rgb(181, 181, 181), rgb(145, 145, 145)); /* Firefox 3.6 to 15 */
+//   background: radial-gradient(circle, rgb(231, 231, 231), rgb(181, 181, 181), rgb(145, 145, 145)); /* Standard syntax */
+// }
+
+.index-page{
+  h1, h2{
+    font-size: 34px;
+    color: @color-gray-darkest !important;
+    margin-top: 0px;
+    padding: 20px;
+    padding-bottom: 20px;
+  }
+
+  .single-about-detail{
+    position: relative;
+    min-height: 300px;
+    margin: 25px;
+    margin-top: 60px;
+
+    &.about-details:hover{
+      background: @color-gray-darkest;
+    }
+
+    .about-details{
+      min-height: 300px;
+
+      h3{
+        font-size: 28px;
+        color: @color-white;
+        margin-top: 0;
+      }
+
+
+      div.inner-row {
+        &.heading{
+          min-height: 130px;
+        }
+        &.address{
+          padding: 15px;
+          position: absolute;
+          bottom: 15px;
+          right: 15px;
+          p{
+            font-size: 16px;
+            color: @color-gray-lightest;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.1;
+          }
+        }
+      }
+
+      &.reuma{
+        background: @color-reuma-dark;
+        &:hover{
+          background: @color-gray-darkest;
+          h1, h2 {
+            color: @color-reuma-dark !important;
+          }
+        }
+      }
+
+      &.dentist{
+        background: @color-main-light;
+        &:hover{
+          background: @color-gray-darkest;
+          h1, h2 {
+            color: @color-main-light !important;
+          }
+
+        }
+      }
+
+      &.surgeon{
+        background: @color-surgeon-dark;
+        &:hover{
+          background: @color-gray-darkest;
+          h1, h2 {
+            color: @color-surgeon-light !important;
+          }
+        }
+      }
+
+      transition: all .7s ease 0s;
+      -webkit-transition: all .7s ease 0s;
+      -moz-transition: all .7s ease 0s;
+      -o-transition: all .7s ease 0s;
+      -ms-transition: all .7s ease 0s;
+    }
+  }
+}
